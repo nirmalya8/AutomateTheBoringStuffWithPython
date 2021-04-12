@@ -5,11 +5,16 @@ strong iff it contains a lower casealphabet, an uppercase alphabet,
 a digit and has a minimum length 8.
 '''
 import re
-strong = re.compile(r'([a-z][A-Z][0-9]){8,}')
+strong = re.compile(r'([A-Z]|[a-z]|[0-9]){8,}')
 p = input("Enter passowrd")
-if strong.search() != None:
-    print("Strong password!")
-else:
-    print("Weak password")
+try:
+    s = strong.search(p).group()
+    print("Strong Password")
+except AttributeError:
+    print("Weak Password")
+#if strong.search(p) != None:
+#    print("Strong password!")
+#else:
+#    print("Weak password")
 
     
