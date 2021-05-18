@@ -2,6 +2,8 @@
 ![Book](Images/book.png)
 (Image from Google)
 
+Anyone can start with this book, most recommended for beginners.
+
 This Repository contains the Code for the Projects in the book 'Automate the Boring Stuff with Python' by Al Sweigart.
 
 
